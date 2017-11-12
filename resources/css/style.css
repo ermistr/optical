@@ -1,4 +1,4 @@
-html {
+html, body {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.4;
@@ -14,6 +14,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+/* Main Banner and header */
 .main-banner {
   background-image: url(../images/glasses-bg.png);
   background-size: cover;
@@ -23,7 +24,7 @@ header {
   background-color: cadetblue;
   color: white;
   align-items: center;
-  padding: 1rem 2rem;
+  margin: 1rem 2rem;
   position: relative;
   top: 1rem;
 }
@@ -33,9 +34,77 @@ header {
 }
 .logo img {
   height: 1.5rem;
+  margin-left: 2rem;
   margin-right: 1rem;
 }
 nav li {
   display: inline-block;
-  margin-left: 2rem;
+  padding: 1rem 2rem;
 }
+.headline {
+  height: 15rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.headline h1 {
+  background-color: white;
+  display: inline-block;
+  margin-right: -2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  text-transform: uppercase;
+}
+/* Services Section */
+#services {
+  justify-content: center;
+  padding: 3rem 0;
+}
+.feature {
+  margin: 3rem;
+  height: 8rem;
+  width: 14%;
+  text-align: center;
+}
+.feature-img {
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+.feature-img img {
+  max-width: 4.75rem;
+  max-height: 4.75rem;
+}
+/* Info, Contact, and Footer */
+#contact {
+  justify-content: center;
+}
+.info {
+  width: 35%;
+  margin-left: 5%;
+  margin-bottom: 5rem;
+}
+.info h4 {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1.25rem;
+  text-transform: uppercase;
+  width: 10rem;
+}
+footer {
+  align-items: center;
+  background-color: azure;
+  height: 9.5rem;
+  justify-content: flex-start;
+}
+.copyright {
+  align-items: center;
+}
+.copyright img {
+  height: 1.5rem;
+  margin-left: 4rem;
+  margin-right: 1rem;
+}
+/* Media Query for Tablets */
